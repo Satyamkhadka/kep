@@ -1,0 +1,63 @@
+<head>
+
+    <script>
+        var arr=[1,2,3,4,1,5,6,7,8,6];
+        var ans=0;
+        var count=arr.length;
+        var distance=arr.length;
+        console.log(count);
+        for(let i=0;i<count+1;i++){
+            console.log('inside i : '+i);
+                for(let j=i+1; j<count+1; j++){
+                    console.log('     inside j : '+j);
+
+                    if(arr[i]==arr[j]){
+                        console.log('     equal spotted with distance '+(j-i)+'and least dist :'+distance+' swapping')
+                if((j-i)<distance)
+                {
+                    ans=arr[i];
+                    distance=(j-i);
+                    console.log('     breaking now');
+                    console.log('     distance is :'+distance);
+                    break;
+                }
+                }
+                
+                }
+               
+        }
+         console.log('this should probably be the answer '+ans);
+
+        //what would this function return huh?
+         function returnValue(a){
+             if(a){
+                 return {
+                     value:'satyam'
+                 };
+             }
+             else{
+                return 
+                 {
+                     value:'noSatyam'
+                 };
+             }
+         }
+
+         console.log(returnValue(true));
+
+         const aarr = [10, 12, 15, 21];
+for (var i = 0; i < aarr.length; i++) {
+    console.log('outside');
+
+  setTimeout(function() {
+    console.log('Index: ' + i + ', element: ' + aarr[i]);
+
+    console.log('inss');
+  }, 3000);
+}
+         </script>
+</head>
+
+<body>
+    
+</body>
